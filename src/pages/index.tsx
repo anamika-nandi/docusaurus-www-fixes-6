@@ -10,6 +10,7 @@ import {PartnerShip} from "../components/app/partnership";
 import {Performance} from "../components/app/performance";
 import {SectionImg} from "../components/app/section-img";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 export default function Home() {
 	const {siteConfig} = useDocusaurusContext();
@@ -21,7 +22,8 @@ export default function Home() {
 				</div>
 				<Browsing />
 				<Performance />
-				<SectionImg />
+				<BrowserOnly>{() => <SectionImg />}</BrowserOnly>
+
 				<div className='bg-brand-home_bg'>
 					<PartnerShip />
 				</div>

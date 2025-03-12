@@ -19,7 +19,7 @@ const LottieAnimation = () => {
 
 export function SectionImg() {
 	return (
-		<div className='h-[370px] lg:h-screen relative w-full'>
+		<div className='h-[370px] md:h-[60vw] 2xl:h-screen relative w-full'>
 			<LottieAnimation />
 			<img src={useBaseUrl("img/up-shadow.png")} alt='#' className='absolute h-[300px] md:h-auto -top-2 z-10 right-0 left-0 w-full ' />
 			<img src={useBaseUrl("img/down.png")} alt='#' className='absolute md:-bottom-4  h-[300px] md:h-auto bottom-0 right-0 left-0 w-full opacity-70 z-10' />

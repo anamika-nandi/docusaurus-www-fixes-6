@@ -24,7 +24,7 @@ export function Performance() {
 	return (
 		<BrowserOnly fallback={<div>Loading...</div>}>
 			{() => (
-				<div className='min-h-screen bg-brand-black-100 pt-24 md:pt-5 pb-0  md:pb-28'>
+				<div className='min-h-screen bg-brand-black-100 pt-24 pb-0 md:pb-28'>
 					<div className='container-custom flex flex-col justify-center gap-16'>
 						<h2 className='text-brand-white-100 font-matter font-bold text-center mx-auto ~text-2xl/4xl md:max-w-3xl max-w-md'>
 							Built for High <span className='text-brand-orange-200'>Performance</span>, <span className='text-brand-orange-300'>Security</span>, and{" "}
